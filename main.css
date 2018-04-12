@@ -1,0 +1,12 @@
+.petCard {
+    background-color: #504a4a;
+    border: solid 1px white;
+    text-align: center;
+    height: 250px;
+    width: 300px;
+    color: white;
+}
+
+.petImage {
+  width: 200px;
+}
