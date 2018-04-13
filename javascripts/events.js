@@ -1,4 +1,4 @@
-const originData = require('./data');
+const data = require('./data.js');
 
 const buttonDog = document.getElementById('dogs');
 const buttonCat = document.getElementById('cats');
@@ -17,7 +17,8 @@ const addEvents = () => {
 
 const filter = (petType) => {
   const newArray = [];
-  const originalArray = originData.getPets();
+  const originalArray = data.getPets();
+  console.log('data', originalArray);
   originalArray.forEach((item) => {
     if (item.type === petType) {
       newArray.push(item);
