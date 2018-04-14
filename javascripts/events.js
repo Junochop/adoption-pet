@@ -1,4 +1,5 @@
 const data = require('./data.js');
+const dombuild = require('./dom');
 
 const buttonDog = document.getElementById('dogs');
 const buttonCat = document.getElementById('cats');
@@ -18,12 +19,13 @@ const addEvents = () => {
 const filter = (petType) => {
   const newArray = [];
   const originalArray = data.getPets();
-  console.log('data', originalArray);
   originalArray.forEach((item) => {
     if (item.type === petType) {
       newArray.push(item);
     };
   });
+  console.log('data', newArray);
+  dombuild(newArray);
 };
 
 module.exports = addEvents;
