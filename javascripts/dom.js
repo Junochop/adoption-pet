@@ -1,5 +1,3 @@
-const addEvents = require('./events');
-
 const outputDiv = document.getElementById('pet-container');
 
 const domString = (pets) => {
@@ -17,7 +15,6 @@ const domString = (pets) => {
 
 const printToDom = (petArray) => {
   outputDiv.innerHTML = domString(petArray);
-  addEvents();
 };
 
 module.exports = printToDom;
