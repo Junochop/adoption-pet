@@ -32,9 +32,8 @@ const filter = (petType) => {
 };
 
 const reset = () => {
-  // const buttonLocation = document.getElementsByClassName('buttons');
-  const dbutton = document.createElement('button');
-  document.body.append(dbutton);
+  const buttonLocation = document.getElementById('reset');
+  buttonLocation.classList.remove('hide');
 };
 
 module.exports = addEvents;
