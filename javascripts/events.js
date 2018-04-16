@@ -36,4 +36,11 @@ const reset = () => {
   buttonLocation.classList.remove('hide');
 };
 
+const clickReset = () => {
+  const buttonLocation = document.getElementById('reset');
+  const newArray = [];
+  const originalArray = data.getPets();
+  dombuild(originalArray);
+}
+
 module.exports = addEvents;
