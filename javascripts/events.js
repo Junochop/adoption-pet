@@ -33,14 +33,12 @@ const filter = (petType) => {
 
 const reset = () => {
   const buttonLocation = document.getElementById('reset');
+  const originArray = data.getPets();
   buttonLocation.classList.remove('hide');
+  buttonLocation.addEventListener('click', () => {
+    dombuild(originArray);
+    buttonLocation.classList.add('hide');
+  });
 };
-
-const clickReset = () => {
-  const buttonLocation = document.getElementById('reset');
-  const newArray = [];
-  const originalArray = data.getPets();
-  dombuild(originalArray);
-}
 
 module.exports = addEvents;
