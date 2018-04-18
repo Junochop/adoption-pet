@@ -3,7 +3,7 @@
 Homeless animals are available for adoption and lets you filter between types of animals. Choose your "Animal" wisely!
 ## Screenshots
 ### Index Page
-
+![Index Page](https://github.com/Junochop/adoption-pet/blob/master/screenshots/Screen%20Shot%202018-04-18%20at%203.24.31%20AM.png)
 
 ## How To Run
 1. Clone this repo and cd into it
