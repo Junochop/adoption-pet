@@ -2,11 +2,22 @@
     background-color: #504a4a;
     border: solid 1px white;
     text-align: center;
-    height: 250px;
-    width: 300px;
+    height: 370px;
+    width: 400px;
     color: white;
+    margin: 1.5%;
+    padding: 35px;
 }
 
 .petImage {
   width: 200px;
+}
+
+#buttonrow {
+  margin: auto;
+  padding: 25px;
+}
+
+body {
+  background-color: teal;
 }
